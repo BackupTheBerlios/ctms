@@ -54,7 +54,7 @@
     </message>
     <message>
         <source>&amp;About</source>
-        <translation type="unfinished">&amp;About</translation>
+        <translation>&amp;About</translation>
     </message>
     <message>
         <source>About &amp;Qt</source>
