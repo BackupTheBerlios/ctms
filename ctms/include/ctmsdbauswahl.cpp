@@ -11,15 +11,17 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
 	// read File and make DomDocument
 	QDomDocument doc( "ctms_database" );
     QFile file( "ctms_database.xml" );
+	this->resize(400,200);
     if ( !file.open( IO_ReadOnly ) )
 		QMessageBox::critical(this,tr("Fileerror"),tr("CAN_NOT_OPEN_FILE"));
+
     if ( !doc.setContent( &file ) ) 
 	{
         file.close();
         QMessageBox::critical(this,tr("Fileerror"),tr("NOT_A_XML_DOCUMENT"));
     }
     file.close();
-
+	comboDatabase = new QComboBox(this,"DBAuswahl");
     QDomElement docElem = doc.documentElement();
     QDomNode n = docElem.firstChild();
 	QDomNode save = n;
@@ -41,8 +43,9 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
 					n = domList->item(i).toElement();
 					if (n.isElement())
 					{
+						comboDatabase->insertItem(getHeaderInformation(n),-1);
 //                      domelementList->insertItem(n.toElement().nodeName());
-/*						switch(n.toElement().nodeName())
+/*					switch(n.toElement().nodeName())
 						{
 						case "driver":
 							break;
@@ -73,6 +76,7 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
 		n = save.nextSibling();
     }
 //	domelementList->show();	
+//	comboDatabase->show();
 }
 
 QString ctmsDBAuswahl::getHeaderInformation( const QDomNode &header )
