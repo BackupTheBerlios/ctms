@@ -73,6 +73,11 @@ int main( int argc, char ** argv )
 					if (n.isElement())
 					{
                         domelementList->insertItem(n.toElement().nodeName());
+						QString test = n.toElement().nodeName();
+						if (n.toElement().nodeName() == "driver")
+						{
+							QApplication::beep();
+						}
 						domelementList->insertItem(getHeaderInformation(n));
 					}
 					++i;

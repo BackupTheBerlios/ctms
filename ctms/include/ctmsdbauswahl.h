@@ -31,6 +31,7 @@ class QHBoxLayout;
 class QGridLayout;
 class QSpacerItem;
 class QComboBox;
+class QDomNode;
 class ctmsButton;
 
 enum eDriver{QODBC=0,QMYSQL=1};
@@ -63,7 +64,9 @@ protected:
 
 protected slots:
     virtual void languageChange();
-
+private:
+	QString getHeaderInformation( const QDomNode &header );
+	structDatabase* structDB;
 }; 
 
 #endif // LOGINDIALOG_H

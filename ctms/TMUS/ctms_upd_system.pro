@@ -10,20 +10,21 @@ OBJECTS_DIR = tmp\obj
 MOC_DIR     = tmp\moc
 
 HEADERS   =  \
+	./ctms_upd_db_tool.h \
 	../include/ctmsbasedialog.h \
 	../include/ctmsbutton.h \
 	../include/ctmsdatabaseconnect.h \
+	../include/ctmsdbauswahl.h \
 	../include/ctmsencrypttext.h \
-	../include/login.h \
-	./ctms_upd_db_tool.h \
-	../include/ctmsdbauswahl.h
+	../include/login.h
 SOURCES   =  \
 	./ctms_upd_db_tool.cpp \
-	main.cpp \
-	../include/login.cpp \
 	../include/ctmsbasedialog.cpp \
 	../include/ctmsbutton.cpp \
 	../include/ctmsdatabaseconnect.cpp \
-	../include/ctmsencrypttext.cpp
+	../include/ctmsdbauswahl.cpp \
+	../include/ctmsencrypttext.cpp \
+	../include/login.cpp \
+	main.cpp
 FORMS     =  \
 	../Forms/login.ui
