@@ -25,6 +25,20 @@ ctmsDatabaseConnect::ctmsDatabaseConnect()
 {
 }
 
+void setDbDriver(QString* pDbDriver)
+{
+	
+}
+void setDbTyp(int pTyp)
+{
+}
+void setDbUser(QString* pDbUser)
+{
+}
+void setDbPassword(QString* pDbPassword)
+{
+}
+
 
 ctmsDatabaseConnect::~ctmsDatabaseConnect()
 {

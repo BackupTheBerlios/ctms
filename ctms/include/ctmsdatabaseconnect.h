@@ -21,16 +21,26 @@
 #define DATABASEMANAGEMENSYSTEMCTMSDATABASECONNECT_H
 
 namespace DatabaseManagemenSystem {
-
+enum eDbTyp{mysql=1,access=10,mssql=20,oracle=30,other=40}:
 /**
 @author Werner Klocker
 */
 class ctmsDatabaseConnect{
 public:
     ctmsDatabaseConnect();
-
+	void setDbDriver(QString*);
+	void setDbTyp(int);
+	void setDbUser(QString*);
+	void setDbPassword(QString*);
     ~ctmsDatabaseConnect();
-
+private:
+	QString sDriver;
+	eDbTyp eTyp;
+	QString sUsername;
+	QString sEncryptedPw;
+	QString sDecryptedPw;
+	
+		
 };
 
 };

@@ -21,18 +21,18 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
         QMessageBox::critical(this,tr("Fileerror"),tr("NOT_A_XML_DOCUMENT"));
     }
     file.close();
-	comboDatabase = new QComboBox(this,"DBAuswahl");
     QDomElement docElem = doc.documentElement();
     QDomNode n = docElem.firstChild();
 	QDomNode save = n;
 	QDomNodeList *domList = new QDomNodeList();
-	comboDatabase = new QComboBox();
+	QString x;
+	comboDatabase = new QComboBox(this,"DBAuswahl");
 	int i = 0;
     while( !n.isNull() ) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         if( !e.isNull() ) 
 		{
-//			domelementList->insertItem(e.tagName());
+			x = e.tagName();
 			
 			if( n.hasChildNodes() )
 			{
@@ -43,8 +43,8 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
 					n = domList->item(i).toElement();
 					if (n.isElement())
 					{
-						comboDatabase->insertItem(getHeaderInformation(n),-1);
-//                      domelementList->insertItem(n.toElement().nodeName());
+						x = getHeaderInformation(n);// comboDatabase->insertItem(getHeaderInformation(n),-1);
+                        //domelementList->insertItem(n.toElement().nodeName());
 /*					switch(n.toElement().nodeName())
 						{
 						case "driver":
@@ -63,8 +63,8 @@ ctmsDBAuswahl::ctmsDBAuswahl(QWidget *parent, char *name, bool modal, WFlags fl)
 							break
 						default:
 							break;
-						}
-*/
+						}*/
+
 //						domelementList->insertItem(getHeaderInformation(n));
 						QApplication::beep();
 					}
