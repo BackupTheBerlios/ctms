@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: TMCS - Win32 Debug--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\DOKUME~1\user\LOKALE~1\Temp\RSPDC.tmp" mit Inhalten
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "C:\Qt\3.3.2\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "QT_DLL" /D "QT_THREAD_SUPPORT" /Fp"Debug/TMCS.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\ctms\TMCS\TMCS\tmcsnewprojekt.cpp"
+]
+Creating command line "cl.exe @C:\DOKUME~1\user\LOKALE~1\Temp\RSPDC.tmp" 
+Erstellen der temporären Datei  "C:\DOKUME~1\user\LOKALE~1\Temp\RSPDD.tmp" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib wsock32.lib winspool.lib winmm.lib C:\Qt\3.3.2\lib\qt-mt332.lib C:\Qt\3.3.2\lib\qtmain.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/TMCS.pdb" /debug /machine:I386 /out:"Debug/TMCS.exe" /pdbtype:sept 
+.\Debug\ctmsdbauswahl.obj
+.\Debug\main.obj
+.\Debug\moc_ctmsdbauswahl.obj
+.\Debug\moc_tmcsmainwindow.obj
+.\Debug\moc_tmcsnewprojekt.obj
+.\Debug\tmcsmainwindow.obj
+.\Debug\tmcsnewprojekt.obj
+]
+Erstellen der Befehlzeile "link.exe @C:\DOKUME~1\user\LOKALE~1\Temp\RSPDD.tmp"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+tmcsnewprojekt.cpp
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+TMCS.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE DB><DB version="1.0">
+<connection>
+    <property name="name">
+        <string>ctms</string>
+    </property>
+    <property name="driver">
+        <string>QODBC3</string>
+    </property>
+    <property name="database">
+        <string>ctms</string>
+    </property>
+    <property name="username">
+        <string></string>
+    </property>
+    <property name="hostname">
+        <string>localhost</string>
+    </property>
+    <property name="port">
+        <string>-1</string>
+    </property>
+    <table>
+        <property name="name">
+            <string>ctms_customer</string>
+        </property>
+        <field>
+            <property name="name">
+                <string>cust_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_name</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_firstname</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_street</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_zipcode</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_city</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_firmname</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_firmname2</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_iban</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_bic</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_kredit</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_payproberty</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_contact</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_telnumber</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_faxnummer</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_email</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>cust_homepage</string>
+            </property>
+        </field>
+    </table>
+    <table>
+        <property name="name">
+            <string>ctms_employee</string>
+        </property>
+        <field>
+            <property name="name">
+                <string>empl_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>ctms_grouprights_group_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>ctms_uright_uright_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>ctms_person_person_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_person_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_begindate</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_agreement</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_section</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_costcenter</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_notice_periode</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_company_car</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_included_overtime</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_overtime</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_weekend_overtime</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_convention</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>empl_classification</string>
+            </property>
+        </field>
+    </table>
+    <table>
+        <property name="name">
+            <string>ctms_person</string>
+        </property>
+        <field>
+            <property name="name">
+                <string>person_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_firstname</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_lastname</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_email</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_street</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_country</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_city</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_zipcode</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>person_telnumber</string>
+            </property>
+        </field>
+    </table>
+    <table>
+        <property name="name">
+            <string>ctms_projtime</string>
+        </property>
+        <field>
+            <property name="name">
+                <string>projt_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_empl_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_date</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_hour</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_user_cost</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_comment</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>projt_orpt_id</string>
+            </property>
+        </field>
+    </table>
+    <table>
+        <property name="name">
+            <string>ctms_time</string>
+        </property>
+        <field>
+            <property name="name">
+                <string>time_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>ctms_employee_empl_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>time_date</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>time_start</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>time_end</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>time_empl_id</string>
+            </property>
+        </field>
+        <field>
+            <property name="name">
+                <string>time_orpt_id</string>
+            </property>
+        </field>
+    </table>
+</connection>
+</DB>
