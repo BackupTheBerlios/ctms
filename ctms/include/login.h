@@ -2,7 +2,7 @@
 ** Form interface generated from reading ui file 'login.ui'
 **
 ** Created: So Feb 13 21:38:21 2005
-**      by: The User Interface Compiler ($Id: login.h,v 1.1 2005/03/09 17:08:59 wekl Exp $)
+**      by: The User Interface Compiler ($Id: login.h,v 1.2 2006/05/16 20:12:58 wekl Exp $)
 **
 ** WARNING! All changes made in this file will be lost!
 ****************************************************************************/
@@ -21,7 +21,7 @@ class QGridLayout;
 class QSpacerItem;
 class QTextEdit;
 class QLabel;
-class ctmsButton;
+//class ctmsButton;
 class ctmsEncryptText;
 
 class LoginDialog : public QDialog

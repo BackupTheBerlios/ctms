@@ -25,14 +25,13 @@
 #include <qdialog.h>
 #include <ctmsencrypttext.h>
 #include <ctmsbutton.h>
-
+#include <qcombobox.h>
 class QVBoxLayout;
 class QHBoxLayout;
 class QGridLayout;
 class QSpacerItem;
 class QComboBox;
 class QDomNode;
-class ctmsButton;
 
 enum eDriver{QODBC=0,QMYSQL=1};
 enum eDatabaseTyp{MYSQL=0,ORACLE=1,ACCESS=2,POSTGRESQL=3,MSSQL=3};
@@ -56,8 +55,8 @@ public:
     ctmsDBAuswahl( QWidget* parent = 0, char* name = 0, bool modal = 0, WFlags fl = 0 );
     ~ctmsDBAuswahl();
 
-    ctmsButton* buttonOk;
-    QComboBox* comboDatabase;
+//    ctmsButton* buttonOk;
+    QComboBox comboDatabase;
 protected:
     QHBoxLayout* layout3;
     QSpacerItem* spacer;

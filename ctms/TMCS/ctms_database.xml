@@ -1,0 +1,33 @@
+<XML>
+
+   <database>
+
+      <driver>"QODBC3"</driver>
+
+      <typ>"mysql"</typ>
+
+      <name>"entw_local"</name>
+
+      <hostname>"localhost"</hostname>
+
+      <username>"mysql"</username>
+
+      <password>""</password>
+
+      <schema>"mysql"</schema>
+
+   </database>
+
+   <database>
+
+      <driver>"QODBC3"</driver>
+
+      <typ>"access"</typ>
+
+      <name>"nordwind</name>
+
+      <hostname>"localhost"</hostname>
+
+   </database>
+
+</XML>

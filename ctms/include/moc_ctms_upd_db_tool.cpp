@@ -2,13 +2,12 @@
 ** ctms_upd_db_tool meta object code from reading C++ file 'ctms_upd_db_tool.h'
 **
 ** Created: Tue Feb 15 11:42:49 2005
-**      by: The Qt MOC ($Id: moc_ctms_upd_db_tool.cpp,v 1.1 2005/03/09 17:08:59 wekl Exp $)
+**      by: The Qt MOC ($Id: moc_ctms_upd_db_tool.cpp,v 1.2 2006/05/16 20:12:58 wekl Exp $)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #undef QT_NO_COMPAT
-#include "ctms_upd_db_tool.h"
 #include <qmetaobject.h>
 #include <qapplication.h>
 
